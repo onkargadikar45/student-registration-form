@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background: white;
+        padding: 30px;
+        width: 400px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    label {
+        font-weight: bold;
+        color: #444;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        background: #667eea;
+        color: white;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background: #5563d6;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 15px;
+        color: #777;
+        font-size: 14px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Student Registration Form</h2>
+
+    <form action="save.php" method="POST">
+
+        <label>Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Phone Number:</label>
+        <input type="text" name="phone" required>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+    <div class="footer">
+        Made by Onkar Gadikar 🚀
+    </div>
+
+</div>
+
+</body>
+
+</html>
